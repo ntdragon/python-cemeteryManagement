@@ -13,18 +13,19 @@ evolves into a more finished project.
      Last name      - Purchaser or person designated for the grave
      First Name     - Purchaser or person designated for the grave
      Row#           - Row (2-29)
-     Grave#         - Grave (4-101) and A,B,C if used for cremation burials initially just number
+     Grave#         - Grave (4-101) and A,B,C if used for cremation burials initially just number, R for reserved
      Page           - Page number of entry in master ledger
-     Date bought
+     Date bought    - date reserved or fully purchased (purchased date when fully paid)
      Contact name   - name of purchaser
-     Contact Address
-     Contact Phone
+     Contact Address - purchaser's address or designate
+     Contact Phone  - purchaser's telephone number or designate
      Paid-lot       - Paid for lot
      Paid-service   - Amount prepaid for services (O&C, foundation)
-     Died-date
-     Buried-date
-     Buried-location
-     Remarks
+     Deceased Name  -
+     Died-date      -
+     Buried-date    -
+     Buried-location-
+     Remarks        - for reserved the amount paid to date with the date noted
      Burial/transfer cert on file
 
 ### Database with pricing so that price reports can be generated
@@ -41,7 +42,7 @@ evolves into a more finished project.
 
 ####The ability to generate various maps of the cemetery
      Burials
-     plats sold (and to whom?(account permissions))
+     plots sold (and to whom?(account permissions))
      location of upcoming burial
 
 #### The ability to be seen on computer and cell phones
