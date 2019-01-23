@@ -13,7 +13,8 @@ evolves into a more finished project.
      Last name      - Purchaser or person designated for the grave
      First Name     - Purchaser or person designated for the grave
      Row#           - Row (2-29)
-     Grave#         - Grave (4-101) and A,B,C if used for cremation burials initially just number, R for reserved
+     Grave#         - Grave (4-101)
+     Grave_subID -  ' ','A','B','C','R' if used for cremation burials initially just number, R for reserved
      Page           - Page number of entry in master ledger
      Date bought    - date reserved or fully purchased (purchased date when fully paid)
      Contact name   - name of purchaser
@@ -25,10 +26,15 @@ evolves into a more finished project.
      Died-date      -
      Buried-date    -
      Buried-location-
-     Remarks        - for reserved the amount paid to date with the date noted
+     Remarks        - 
      Burial/transfer cert on file
 
 ### Database with pricing so that price reports can be generated
+     Date of pricing      date
+     service                     text
+     charge                      number
+
+From these a price sheet of the following can be generated
      Date of pricing
      Plot
      Infant plot
