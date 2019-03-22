@@ -2,11 +2,11 @@
 
 --schema for cemetery tables
 
-create table graves (
+create table plots (
           id        integer primary key autoincrement not null,
           plotrow integer,
           plotnum   integer,
-          plotsub   char(1) check(plotsub in (' ','A','B','C','R')),
+          plottype text,
           page      integer,
           pidate     date,
           plastname text,
@@ -18,11 +18,19 @@ create table graves (
           pspaid    number,
           pservice  text,
           pcert     char(1) check(pcert in (' ','Y','N')),
-          dlastname text,
+);
+
+create table graves (
+          id        integer primary key autoincrement not null,
+          plotrow integer,
+          plotnum   integer,
+          plotsub   char(1) check(plotsub in (' ','A','B','C','R')),
+           dlastname text,
           dfirstname     text,
           ddied     date,
           dburied   date,
-          dgrave    text,
+          dage text,
+          dburial   text,
           dreason   text,
           dcert     char(1) check(dcert in (' ','Y','N')),
           unique(plotrow, plotnum, plotsub)

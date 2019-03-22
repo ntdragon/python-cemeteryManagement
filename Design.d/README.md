@@ -4,32 +4,51 @@ evolves into a more finished project.
 
 ## Current Description of the cemetery and its various processes/procedures and policies
 
+## Design Processes
+In the beginning need to designate the size of the grid, 
+Initially have the program run and set up the plotgrid for the cemetery then edit the plotgrid to reflect
+     which plots are road, trees, and other non grave plots
+Next fill in the plots information for those plots already sold and if someone is buried in the plot fill in that
+     information also
+Menu - Sell Plot, Burial, Locate Person, 
+     View/print cemetery map A;burials,  B, Sold, C;Combined 
+
 ## Desired Design features
 
 ### Database
 
-#### Databased with information on each plot
+#### Database information on each plot
+
+     Row number     (2-29) for St Joseph
+     plot column         (4-101) for St Joseph
+     plot type  -- based on a grid so options are grave, road, tree, concretepad,...
+     page #    of master ledger (0 if feature like road, tree...)
+     Date bought    - date reserved or fully purchased (purchased date when fully paid)
+     Contact name   - name of purchaser
+     Contact Address - purchaser's address or designate
+     Contact Phone  - purchaser's telephone number or designate
+     Cost-plot      - Cost of plot
+     Paid-plot       - Paid for plot (if Paid-plot != Cost-Plot the reserved)
+     Paid-service   - Amount prepaid for services (O&C, foundation)
+     Type-service     Type os services prepaid
+     plot certificate issued Y/N
+     
+#### Databased with information on each grave
 
      Last name      - Purchaser or person designated for the grave
      First Name     - Purchaser or person designated for the grave
      Row#           - Row (2-29)
      Grave#         - Grave (4-101)
-     Grave_subID -  ' ','A','B','C','R' if used for cremation burials initially just number, R for reserved
+     Grave_subID -  ' ','A','B','C'  if used for cremation, burials initially just number
      Page           - Page number of entry in master ledger
-     Date bought    - date reserved or fully purchased (purchased date when fully paid)
-     Contact name   - name of purchaser
-     Contact Address - purchaser's address or designate
-     Contact Phone  - purchaser's telephone number or designate
-     Paid-lot       - Paid for lot
-     Paid-service   - Amount prepaid for services (O&C, foundation)
-     Deceased Name  -
      Died-date      -
      Buried-date    -
-     Buried-location-
+     Buried-burial- full, infant cremated
+     Age of person buried - months or years
      Remarks        - 
-     Burial/transfer cert on file
+     Burial/transfer cert on file - Y/N
 
-### Database with pricing so that price reports can be generated
+#### Database with pricing so that price reports can be generated
      Date of pricing      date
      service                     text
      charge                      number
